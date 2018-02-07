@@ -7,12 +7,16 @@ module ApplicationHelper
                 title: "Home"
             },
             {
-                url: '#',
+                url: about_us_path,
                 title: "About Us"
             },
             {
                 url: '#',
                 title: "Sounds"
+            },
+            {
+                url: user_path(current_user),
+                title: "Profile"
             }
         ]
 

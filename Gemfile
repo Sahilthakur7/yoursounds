@@ -25,6 +25,7 @@ gem 'pry-rails', '~> 0.3.4'
 gem 'friendly_id', '~> 5.1'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'devise'
+gem 'paperclip', '~> 5.2', '>= 5.2.1'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
