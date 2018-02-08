@@ -13,10 +13,6 @@ module ApplicationHelper
             {
                 url: '#',
                 title: "Sounds"
-            },
-            {
-                url: user_path(current_user),
-                title: "Profile"
             }
         ]
 
@@ -38,10 +34,18 @@ module ApplicationHelper
 
     def login_helper(style="")
         if user_signed_in?
-            link_to "Logout",destroy_user_session_path,method: :delete,class:style
+            (link_to "Logout",destroy_user_session_path,method: :delete,class:style) + " ".html_safe +
+                (link_to "Profile", user_path(current_user),class:style)
         else
-            (link_to "SignUp",new_user_registration_path,class:style) + " ".html_safe +
-                (link_to "Login",new_user_session_path,class:style)
+            (link_to "SignUp",new_user_registration_path,class:style) + " ".html_safe 
         end
+    end
+
+    def resource
+        @resource || User.new
+    end
+
+    def resource_name
+        :user
     end
 end
