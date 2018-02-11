@@ -1,0 +1,38 @@
+<div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    <%= user.username%>
+                </a>
+            </li>
+            <li>
+                <a href="#">Playlists</a>
+            </li>
+            <li>
+                <a href="#">Information</a>
+            </li>
+            <li>
+                <a href="#">Settings</a>
+            </li>
+            <li>
+                <a href="#">Followed Artists</a>
+            </li>
+            <center>
+                <%= image_tag user.avatar.url(:medium), width: '100%',class: 'img-cir'%>
+            </center>
+        </ul>
+    </div>
+
+    <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Profile Options</a>
+
+
+    <script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+
+});
+    </script>
