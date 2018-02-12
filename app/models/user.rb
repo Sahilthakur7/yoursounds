@@ -9,5 +9,6 @@ class User < ApplicationRecord
 
   has_attached_file :avatar, :styles => {medium: "300x300", small: "150x150" , thumb: "100x100>"}
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
+  has_many :posts
 
 end

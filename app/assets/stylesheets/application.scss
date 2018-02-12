@@ -176,3 +176,18 @@ h6, .h6 {
 .img-cir{
     border-radius: 40%;
 }
+
+
+.postbox {
+    width: 60%;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    margin: auto;
+    padding: 16px;
+    margin-top: 15px;
+}
+
+.postbox .content {
+    text-align: center;
+    font-family: 'BioRhyme Expanded', serif;
+}

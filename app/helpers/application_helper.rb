@@ -34,8 +34,8 @@ module ApplicationHelper
 
     def login_helper(style="")
         if user_signed_in?
-            (link_to "Logout",destroy_user_session_path,method: :delete,class:style) + " ".html_safe +
-                (link_to "Profile", user_path(current_user),class:style)
+            (link_to "Profile", user_path(current_user),class:style) + " ".html_safe +
+            (link_to "Logout",destroy_user_session_path,method: :delete,class:style) 
         else
             (link_to "SignUp",new_user_registration_path,class:style) + " ".html_safe 
         end
