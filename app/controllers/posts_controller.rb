@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
     def create
-        @post = current_user.comments.build(post_params)
-
+        @post = current_user.posts.build(post_params)
     end
 
     private

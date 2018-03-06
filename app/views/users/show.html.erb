@@ -4,15 +4,12 @@
     <center><h1><%=@user.username%></h1></center>
 
     <h2>Posts</h2>
+
     <div>
         <%= render 'posts/posts_form'%>
     </div>
-    <% @posts.each do |post|%>
-        <div class="postbox">
-            <%= distance_of_time_in_words(post.created_at,Time.now)%> ago:
-            <div class="content">
-                <%= post.content%>
-            </div>
-        </div>
-    <%end%>
+
+    <div id="posts" data-user-id="<% @user.id%>">
+        <%=render @user.posts%>
+    </div>
 </div>
