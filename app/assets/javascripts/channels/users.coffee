@@ -12,7 +12,6 @@ jQuery(document).on 'turbolinks:load' , ->
         send_post: (post, user_id) ->
             @perform 'send_post',post: post, user_id: user_id
 
-
     $('#new_post').submit (e) ->
         $this = $(this)
         textarea = $this.find('#post_content')

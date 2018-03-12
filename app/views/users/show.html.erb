@@ -9,7 +9,7 @@
         <%= render 'posts/posts_form'%>
     </div>
 
-    <div id="posts" data-user-id="<% @user.id%>">
+    <div id="posts" data-user-id="<%= @user.id%>">
         <%=render @user.posts%>
     </div>
 </div>
