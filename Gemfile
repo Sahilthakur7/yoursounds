@@ -29,6 +29,7 @@ gem 'paperclip', '~> 5.2', '>= 5.2.1'
 gem 'jquery-rails'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'redis', '~> 4.0', '>= 4.0.1'
+gem 'simple_form', '~> 3.5', '>= 3.5.1'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

@@ -14,9 +14,11 @@
             <li>
                 <a href="#">Information</a>
             </li>
-            <li>
-                <a href="#">Settings</a>
-            </li>
+            <% if current_user == user%>
+                <li>
+                    <%= link_to "Settings", edit_user_registration_path(current_user)%>
+                </li>
+            <%end%>
             <li>
                 <a href="#">Followed Artists</a>
             </li>
