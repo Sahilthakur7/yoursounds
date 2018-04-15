@@ -10,6 +10,8 @@
     </div>
 
     <div id="posts" data-user-id="<%= @user.id%>">
-        <%=render @user.posts%>
+        <%= paginate @posts%>
+        <%=render @posts%>
+        <%= paginate @posts%>
     </div>
 </div>
