@@ -7,4 +7,7 @@ Rails.application.routes.draw do
     root to: 'pages#home'
 
     mount ActionCable.server => '/cable'
+    get 'auth/:provider/callback',to: 'sessions#create'
+    match 'auth/failure', to: redirect('/')
+    match 'signout', to: 'sessions#destroy', as: 'signout'
 end

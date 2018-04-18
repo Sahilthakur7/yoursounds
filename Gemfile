@@ -32,6 +32,11 @@ gem 'redis', '~> 4.0', '>= 4.0.1'
 gem 'simple_form', '~> 3.5', '>= 3.5.1'
 gem 'twitter', '~> 6.2'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
+gem 'soundcloud', '~> 0.3.4'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-twitter'
+gem 'dotenv-rails'
+
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
